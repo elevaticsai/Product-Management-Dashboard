@@ -1,15 +1,10 @@
 import React from 'react';
-<<<<<<< HEAD
 import { Routes, Route, Navigate } from 'react-router-dom';
-=======
-import { Routes, Route } from 'react-router-dom';
->>>>>>> b1e49d5132c35ed1e946b281ac9a71f1b47d83f8
 import { Sidebar } from './components/Sidebar';
 import { Menu } from 'lucide-react';
 import Dashboard from './pages/Dashboard';
 import PhasePage from './pages/PhasePage';
 import TestPlanPage from './pages/TestPlanPage';
-<<<<<<< HEAD
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import ForgotPasswordPage from './pages/ForgotPasswordPage';
@@ -39,11 +34,6 @@ function AppContent() {
       </Routes>
     );
   }
-=======
-
-function App() {
-  const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
->>>>>>> b1e49d5132c35ed1e946b281ac9a71f1b47d83f8
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -59,23 +49,16 @@ function App() {
       
       <main className="lg:ml-64 min-h-screen">
         <Routes>
-<<<<<<< HEAD
           <Route path="/" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
           <Route path="/phase/:phaseId" element={<PrivateRoute><PhasePage /></PrivateRoute>} />
           <Route path="/phase/testing/test-plan" element={<PrivateRoute><TestPlanPage /></PrivateRoute>} />
           <Route path="*" element={<Navigate to="/" />} />
-=======
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/phase/:phaseId" element={<PhasePage />} />
-          <Route path="/phase/testing/test-plan" element={<TestPlanPage />} />
->>>>>>> b1e49d5132c35ed1e946b281ac9a71f1b47d83f8
         </Routes>
       </main>
     </div>
   );
 }
 
-<<<<<<< HEAD
 function App() {
   return (
     <AuthProvider>
@@ -84,6 +67,4 @@ function App() {
   );
 }
 
-=======
->>>>>>> b1e49d5132c35ed1e946b281ac9a71f1b47d83f8
 export default App;

@@ -14,17 +14,11 @@ import {
   TestTube,
   Rocket,
   Settings2,
-<<<<<<< HEAD
   FileCheck,
   LogOut
 } from 'lucide-react';
 import { phases } from '../data/phases';
 import { useAuth } from '../contexts/AuthContext';
-=======
-  FileCheck
-} from 'lucide-react';
-import { phases } from '../data/phases';
->>>>>>> b1e49d5132c35ed1e946b281ac9a71f1b47d83f8
 
 interface SidebarProps {
   isOpen: boolean;
@@ -44,10 +38,7 @@ const phaseIcons: Record<string, any> = {
 export function Sidebar({ isOpen, onClose }: SidebarProps) {
   const navigate = useNavigate();
   const location = useLocation();
-<<<<<<< HEAD
   const { logout, user } = useAuth();
-=======
->>>>>>> b1e49d5132c35ed1e946b281ac9a71f1b47d83f8
   const [expandedPhase, setExpandedPhase] = React.useState<string | null>(null);
 
   const handleNavigation = (path: string) => {
@@ -64,16 +55,11 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
       {/* Overlay */}
       {isOpen && (
         <div
-<<<<<<< HEAD
           className="fixed inset-0 bg-black/50 lg:hidden z-40 backdrop-blur-sm"
-=======
-          className="fixed inset-0 bg-black/50 lg:hidden z-40"
->>>>>>> b1e49d5132c35ed1e946b281ac9a71f1b47d83f8
           onClick={onClose}
         />
       )}
       
-<<<<<<< HEAD
       <aside className={`
         fixed top-0 left-0 h-screen bg-white border-r border-gray-100 z-50
         w-[280px] transform transition-transform duration-300 ease-in-out overflow-y-auto
@@ -112,25 +98,6 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
               </div>
             </div>
           </div>
-=======
-      <div className={`
-        fixed top-0 left-0 h-screen bg-white border-r border-gray-100 z-50
-        w-64 transform transition-transform duration-200 ease-in-out overflow-y-auto
-        ${isOpen ? 'translate-x-0' : '-translate-x-full'}
-        lg:translate-x-0
-      `}>
-        <div className="px-5 h-16 flex items-center justify-between border-b border-gray-100">
-          <h2 
-            className="text-lg font-normal text-gray-800 flex items-center gap-2 cursor-pointer"
-            onClick={() => handleNavigation('/')}
-          >
-            <FolderKanban className="text-indigo-600" size={20} />
-            ProductFlow
-          </h2>
-          <button onClick={onClose} className="lg:hidden text-gray-400 hover:text-gray-600">
-            <X size={20} />
-          </button>
->>>>>>> b1e49d5132c35ed1e946b281ac9a71f1b47d83f8
         </div>
         
         <nav className="py-4">
@@ -227,7 +194,6 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
                   </button>
                 </li>
               ))}
-<<<<<<< HEAD
               <li>
                 <button
                   onClick={logout}
@@ -241,12 +207,6 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           </div>
         </nav>
       </aside>
-=======
-            </ul>
-          </div>
-        </nav>
-      </div>
->>>>>>> b1e49d5132c35ed1e946b281ac9a71f1b47d83f8
     </>
   );
 }

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ProductFlow - Product Lifecycle Management System
 
 A comprehensive product lifecycle management system built with React, TypeScript, and Tailwind CSS. This application helps teams manage their product development process from ideation to maintenance.
@@ -83,8 +82,8 @@ npm run dev
 4. Open [http://localhost:5173](http://localhost:5173) in your browser
 
 ### Default Login Credentials
-- Email: vineet@elevatics.ai
-- Password: password
+- Email:
+- Password: 
 
 ## Project Structure
 
@@ -124,8 +123,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Vite](https://vitejs.dev/)
 - [Lucide Icons](https://lucide.dev/)
 - [Radix UI](https://www.radix-ui.com/)
-=======
-# Product-Management-Dashboard
-Product Management Dashboard to track the development of product
-# SCM-Process-Management
->>>>>>> b1e49d5132c35ed1e946b281ac9a71f1b47d83f8
