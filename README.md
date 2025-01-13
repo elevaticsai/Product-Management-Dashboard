@@ -1,129 +1,125 @@
-# Supply Chain Management Dashboard
+# ProductFlow - Product Lifecycle Management System
 
-A modern, feature-rich supply chain management dashboard built with React, TypeScript, and Tailwind CSS.
+A comprehensive product lifecycle management system built with React, TypeScript, and Tailwind CSS. This application helps teams manage their product development process from ideation to maintenance.
 
 ## Features
 
-- 🔐 **Authentication System**
-  - Email/Password login
-  - Social authentication (Google, GitHub, Apple)
-  - Password recovery
-  - Protected routes
+### 🔐 Authentication
+- Email/Password authentication
+- Social login (Google, GitHub, Apple)
+- Password recovery
+- User registration
 
-- 📊 **Dashboard Features**
-  - Process management
-  - Document tracking
-  - Performance metrics
-  - Real-time progress tracking
-  - Category and status filtering
-  - Search functionality
+### 📊 Dashboard
+- Overview of all product phases
+- Real-time progress tracking
+- Interactive metrics and charts
+- Responsive design for all devices
 
-- 💼 **Process Management**
-  - New Product Introduction (NPI)
-  - Supply Chain Management
-  - Planning
-  - Procurement
-  - Logistics
-  - Inventory/Warehouse
-  - Trade Compliance
-  - Sustainability
+### 🔄 Product Phases
+- Ideation
+- Research & Validation
+- Planning & Roadmapping
+- Development
+- Testing & QA
+  - Comprehensive test plan management
+  - Test case tracking
+  - QA metrics
+- Launch
+- Post-Launch & Maintenance
 
-- 🎨 **Modern UI/UX**
-  - Responsive design
-  - Collapsible sidebar
-  - Interactive cards
-  - Modal dialogs
-  - Progress indicators
-  - Status badges
+### 📈 Analytics
+- Phase-specific metrics
+- Progress tracking
+- Interactive charts
+- Performance indicators
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v18 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository
-```bash
-git clone [repository-url]
-```
-
-2. Install dependencies
-```bash
-npm install
-```
-
-3. Start the development server
-```bash
-npm run dev
-```
-
-### Default Login Credentials
-
-- Email: vineet@elevatics.ai
-- Password: password
+### 🎨 UI/UX
+- Modern, clean interface
+- Responsive design
+- Dark/light mode support
+- Interactive components
+- Real-time updates
 
 ## Tech Stack
 
 - **Frontend Framework**: React 18
 - **Type System**: TypeScript
 - **Styling**: Tailwind CSS
-- **UI Components**: shadcn/ui
-- **Icons**: Lucide React
+- **Routing**: React Router v6
 - **State Management**: React Context
-- **Routing**: React Router
-- **Form Handling**: React Hook Form
+- **Charts**: Recharts
+- **Icons**: Lucide React
+- **UI Components**: Radix UI
+- **Build Tool**: Vite
+- **Package Manager**: npm
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18 or higher
+- npm 9 or higher
+
+### Installation
+
+1. Clone the repository:
+\`\`\`bash
+git clone https://github.com/yourusername/productflow.git
+cd productflow
+\`\`\`
+
+2. Install dependencies:
+\`\`\`bash
+npm install
+\`\`\`
+
+3. Start the development server:
+\`\`\`bash
+npm run dev
+\`\`\`
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+### Default Login Credentials
+- Email: vineet@elevatics.ai
+- Password: password
 
 ## Project Structure
 
-```
+\`\`\`
 src/
-├── components/         # UI components
-│   ├── auth/          # Authentication components
-│   └── ui/            # Reusable UI components
-├── contexts/          # React contexts
-├── hooks/             # Custom hooks
-├── lib/              # Utility functions
-└── main.tsx          # Application entry point
-```
+├── components/     # Reusable UI components
+├── contexts/      # React Context providers
+├── data/          # Static data and mock APIs
+├── pages/         # Page components
+├── types/         # TypeScript type definitions
+└── utils/         # Utility functions
+\`\`\`
 
-## Features in Detail
+## Available Scripts
 
-### Authentication
-- Secure login/signup system
-- Password recovery functionality
-- Social authentication options
-- Protected route middleware
-
-### Dashboard
-- Project selection dropdown
-- Real-time search functionality
-- Category and status filters
-- Interactive process cards
-- Detailed process modals
-- Progress tracking
-- Document management
-- Performance metrics
-
-### UI/UX
-- Responsive layout
-- Collapsible sidebar navigation
-- Modern card design
-- Interactive elements
-- Loading states
-- Error handling
-- Toast notifications
+- \`npm run dev\`: Start development server
+- \`npm run build\`: Build for production
+- \`npm run preview\`: Preview production build
+- \`npm run lint\`: Run ESLint
 
 ## Contributing
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create your feature branch: \`git checkout -b feature/amazing-feature\`
+3. Commit your changes: \`git commit -m 'Add amazing feature'\`
+4. Push to the branch: \`git push origin feature/amazing-feature\`
 5. Open a Pull Request
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/)
+- [Lucide Icons](https://lucide.dev/)
+- [Radix UI](https://www.radix-ui.com/)
